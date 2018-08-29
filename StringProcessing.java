@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package string.processing;
+package stringprocessing;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,7 +21,7 @@ public class StringProcessing {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     String Firstname;
+         String Firstname;
      String Lastname;
      String Gender;
      int Age;
@@ -45,8 +45,8 @@ public class StringProcessing {
                String Age = liner[3];
                String Pnumber = liner[4];
                String Email = liner[5];
-               
-               records[currentIndex] = String.format(" ");
+              
+               records[currentIndex] = String.format("%-20s%-20s%-10s%10d", Firstname, Lastname, Gender, Age, Pnumber, Email);
                currentIndex++;
             }
             
@@ -56,4 +56,5 @@ public class StringProcessing {
             System.err.println("File not found");
         }
     }
-}
+    }
+
